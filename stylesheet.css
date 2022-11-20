@@ -1,0 +1,185 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    overflow: -moz-scrollbars-none;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.outerContainer{
+    width: 90%;
+    height: 90%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContainer{
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+form{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.error{
+    border: solid red 5px;
+}
+
+
+
+label{
+    color: white;
+}
+
+form p{
+    color: white;
+}
+
+.count{
+    color: white;
+}
+
+.error2{
+    color: red;
+}
+
+.text{
+   width: 80%;
+   padding: 25px 0px;
+   font-size: 20px;
+}
+
+#button{
+    cursor: pointer;
+}
+
+.commentContainer{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.commentSection{
+width: 95%;
+height: 95%;
+overflow: scroll;
+}
+
+.commentSection::-webkit-scrollbar {
+    display: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+.commentCard{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 0px 10px;
+    border: solid black 2px;
+    margin: 5px 0px;
+    word-wrap: break-word;
+}
+
+.commentCard h2,p{
+    margin: 10px 0px;
+    width: 95%;
+}
+
+@media only screen and (min-width: 1700px) {
+    p{
+        font-size: 1.1vw;
+    }
+
+    h2{
+        font-size: 1.6vw;
+    }
+
+    label{
+        font-size: 1.1vw;
+    }
+
+    .text{
+        width: 80%;
+        padding: 1vw 0px;
+        font-size: 1.1vw;
+     }
+   
+
+    .commentCard{
+        width: 100%;
+        height: 20%;
+}
+
+#button{
+    padding: 1vw 1vw;
+    font-size: 1.1vw; 
+}
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    body{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .outerContainer {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .formContainer {
+        width: 100%;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .commentContainer {
+        width: 90%;
+        height: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
